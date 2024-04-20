@@ -1,3 +1,10 @@
+### What is this fork for?
+
+T-Clock uses a single font size setting defined in it's options however it will not scale nicely when taskbar is placed on another monitor with different DPI scaling. To solve this issue a single line is added in Tclock.c
+`fontsize /= GetDpiForSystem() / 96;`
+Unfortunately I didn't manage to build with compile.bat so this fork can be build via msvc-vs.sln 
+
+
 T-Clock Redux
 ==============
 <sup>GCC<sup>(MinGW-w64)</sup></sup> [![Build Status](https://travis-ci.org/White-Tiger/T-Clock.svg?branch=yg-master)](https://travis-ci.org/White-Tiger/T-Clock) [![Coverity Status](https://scan.coverity.com/projects/3794/badge.svg)](https://scan.coverity.com/projects/white-tiger-t-clock) <sup>MSVC</sup> [![Build status](https://ci.appveyor.com/api/projects/status/b3qehrl4c8naisx4?svg=true)](https://ci.appveyor.com/project/White-Tiger/t-clock) <sub>(click picture below for full size)</sub>
